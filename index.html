@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Abdul Raheem | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav__brand">
+      <div class="nav__logo">AR</div>
+      <span>Abdul Raheem</span>
+    </div>
+     <button
+    class="nav__toggle"
+    id="navToggle"
+    aria-label="Toggle navigation"
+    aria-expanded="false"
+  >
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+  </button>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="#hero" class="nav__link">Home</a>
+    <a href="#experience" class="nav__link">Experience</a>
+    <a href="#skills" class="nav__link">Skills</a>
+    <a href="#projects" class="nav__link">Projects</a>
+    <a href="#gallery" class="nav__link">Gallery</a>
+    <a href="#contact" class="nav__link">Contact</a>
+  </nav>
+
+
+    <a href="assets/Raheem Abdul Resume.pdf" download class="btn btn-primary nav__cta">
+      Download Resume
+    </a>
+  </header>
+
+  <main class="page-wrap">
+    <!-- HERO / INTRO -->
+    <section id="hero" class="hero glass scroll-reveal">
+      <div class="hero-inner">
+        <div class="hero__text">
+          <div class="hero__accent">
+            <span class="hero__accent-dot"></span>
+            Full Stack Developer Portfolio
+          </div>
+          <h1>Hi, I’m <span class="hero__name">Abdul Raheem</span></h1>
+          <p class="hero__role">
+            I build <span>thoughtful, scalable web applications</span>.
+          </p>
+
+          <!-- Rotating role text -->
+          <div class="hero__loop">
+            <span class="hero__loop-label">I also work as</span>
+            <span class="hero__loop-value">
+              <span id="role-rotator" class="hero__loop-text">Full Stack Developer</span>
+            </span>
+          </div>
+
+          <p class="hero__description">
+            A full stack developer focused on crafting performant, user-friendly digital experiences.
+            I enjoy working across the stack — from clean, accessible UIs to robust backend services.
+          </p>
+
+          <div class="hero__actions">
+            <a href="assets/Raheem Abdul Resume.pdf" download class="btn btn-primary">
+              Download Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              View My Projects
+            </a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Experience</span>
+              <span class="hero__meta-value">1 Year</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Location</span>
+              <span class="hero__meta-value">Vancouver, Canada</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO AVATAR -->
+        <div class="hero__avatar-wrap">
+          <div class="hero__orbital">
+            <div class="hero__avatar-ring"></div>
+            <div class="hero__avatar">
+              <!-- Replace this src with your own portrait image -->
+              <img src="assets/raheem.jpeg" alt="Developer portrait" />
+            </div>
+          </div>
+
+          <!-- Badge OUTSIDE the circle -->
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Open to opportunities
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & ACHIEVEMENTS -->
+    <section id="experience" class="scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Achievements</h2>
+        <p class="section-subtitle">
+          A snapshot of my professional journey and some milestones I’m proud of.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Experience Card 1 -->
+        <div class="flip-card scroll-reveal">
+          <div class="flip-card-inner">
+            <article class="flip-face front">
+              <div class="experience-tag">Associate Software Engineer · Oct 2023 - Mar 2024</div>
+              <h3 class="experience-role">Pangean Global Solutions </h3>
+              <p class="experience-meta">India</p>
+              <ul class="experience-list">
+                <li>Developed and maintained front-end features for a state government project using Angular.js,
+                    facilitating efficient monitoring and management of registered chit fund companies.</li>
+                <li>Collaborated with back-end developers to integrate front-end components with server-side
+                    logic, ensuring seamless communication and functionality across the application stack.</li>
+            
+              </ul>
+              <span class="flip-note">Flip for more</span>
+            </article>
+
+            <article class="flip-face back">
+              <h3 class="experience-role">Highlights</h3>
+              <ul class="experience-list">
+                <li>Built Angular.js front-end features for a state government system.</li>
+                <li>Improved workflows for managing registered chit fund companies.</li>
+                <li>Integrated UI components with backend APIs for smooth functionality.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience Card 2 -->
+        <div class="flip-card scroll-reveal">
+          <div class="flip-card-inner">
+            <article class="flip-face front">
+              <div class="experience-tag">Intern · Apr 2023 - Sep 2023</div>
+              <h3 class="experience-role">Dasvande Technologies </h3>
+              <p class="experience-meta">India</p>
+              <ul class="experience-list">
+                <li>Collaborated with a team of developers to enhance and maintain a front-end application for a dairy
+                    farm management project using React.js, facilitating streamlined record-keeping and data
+                    management for dairy farm owners.</li>
+                <li>Implemented data entry forms, interactive dashboards, and reporting tools, to empower users in
+                    effectively managing their dairy farm operations.</li>
+               
+              </ul>
+              <span class="flip-note">Flip for more</span>
+            </article>
+
+            <article class="flip-face back">
+              <h3 class="experience-role">Highlights</h3>
+              <ul class="experience-list">
+                <li>Enhanced a React.js dairy farm management app.</li>
+                <li>Built data forms, dashboards, and reporting UI.</li>
+                <li>Supported streamlined record-keeping and daily operations for farm owners.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience Card 3 -->
+        <!-- <div class="flip-card scroll-reveal">
+          <div class="flip-card-inner">
+            <article class="flip-face front">
+              <div class="experience-tag">Backend Developer · 2020 – 2021</div>
+              <h3 class="experience-role">CloudNet Systems</h3>
+              <p class="experience-meta">India</p>
+              <ul class="experience-list">
+                <li>Built REST APIs using Node.js and Express.</li>
+                <li>Optimized database queries in PostgreSQL.</li>
+                <li>Integrated secure authentication (JWT/OAuth).</li>
+              </ul>
+              <span class="flip-note">Flip for more</span>
+            </article>
+
+            <article class="flip-face back">
+              <h3 class="experience-role">Highlights</h3>
+              <ul class="experience-list">
+                <li>Handled 50k+ daily API requests.</li>
+                <li>Developed 20+ microservices.</li>
+                <li>Implemented Redis caching layer.</li>
+              </ul>
+            </article>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Tools and technologies I work with across frontend, backend, and everything in between.
+        </p>
+      </div>
+
+      <article class="glass skills-card">
+        <div class="skills-filters">
+          <button class="skills-filter-btn active" data-filter="all">All</button>
+          <button class="skills-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="skills-filter-btn" data-filter="backend">Backend</button>
+          <button class="skills-filter-btn" data-filter="other">Others</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-pill" data-category="frontend">HTML5</div>
+          <div class="skill-pill" data-category="frontend">CSS3 / SCSS</div>
+          <div class="skill-pill" data-category="frontend">JavaScript (ES6+)</div>
+          <div class="skill-pill" data-category="frontend">React</div>
+          <div class="skill-pill" data-category="frontend">Next.js</div>
+          <div class="skill-pill" data-category="frontend">Tailwind CSS</div>
+
+          <!-- Backend -->
+          <div class="skill-pill" data-category="backend">Node.js</div>
+          <div class="skill-pill" data-category="backend">Express</div>
+          <div class="skill-pill" data-category="backend">MongoDB</div>
+          <div class="skill-pill" data-category="backend">PostgreSQL</div>
+          <div class="skill-pill" data-category="backend">REST APIs</div>
+          <div class="skill-pill" data-category="backend">Authentication (JWT/OAuth)</div>
+
+          <!-- Other -->
+          <div class="skill-pill" data-category="other">Git & GitHub</div>
+          <div class="skill-pill" data-category="other">Docker</div>
+          <div class="skill-pill" data-category="other">Figma</div>
+          <div class="skill-pill" data-category="other">Agile / Scrum</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <!-- <p class="section-subtitle">
+          A few selected full stack projects. Each one blends clean UI, solid architecture, and real-world use cases.
+        </p> -->
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass scroll-reveal">
+          <div class="project-image">
+            <img src="assets/p1.png" alt="Project 1" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project One · PEDAL PATCH</h3>
+            <p class="project-description">
+              Pedal Patch is a Progressive Web App (PWA) that helps cyclists request emergency assistance and schedule services when needed. It supports two user roles—service providers and customers—and offers portfolio management features for both, making roadside support and service coordination seamless and efficient.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/DebugDemons/Pedal_Patch" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass scroll-reveal">
+          <div class="project-image">
+            <img src="assets/p2.png" alt="Project 2" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Two · STREETSIGHT</h3>
+            <p class="project-description">
+              StreetSight is a powerful, web-based CRM solution built specifically for billboard and outdoor advertising businesses. It is developedto simplify and streamline day-to-day operations by offering a single, unified platform that helps you manage every aspect of your billboard business — from asset tracking to client billing.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Stripe</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/streetsight0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://streetsight.wmdd.ca/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass scroll-reveal">
+          <div class="project-image">
+            <img src="assets/cover1.jpg" alt="Project 3" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Three · ZYRA</h3>
+            <p class="project-description">
+             Zyra is a dual-interface platform designed for both children and parents. Kids complete daily tasks and routines to unlock collectible items related to their interests, like dinosaurs, cats, or princesses, which are stored in their personal library. Parents can manage routines, track progress, and encourage positive habits, while children stay motivated through play, discovery, and reward.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Cloud Deploy</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/NamitJaitly/capstone_project_fall" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">
+          A space to highlight certificates, talks, hackathons, and other achievements.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item glass">
+          <img src="assets/g1.jpeg" alt="Achievement 1" />
+        </div>
+        <div class="gallery-item glass">
+          <img src="assets/g6.jpeg" alt="Achievement 2" />
+        </div>
+        <div class="gallery-item glass">
+          <img src="assets/g3.jpeg" alt="Achievement 3" />
+        </div>
+        <div class="gallery-item glass">
+          <img src="assets/g4.jpeg" alt="Achievement 4" />
+        </div>
+        <div class="gallery-item glass">
+          <img src="assets/g5.jpeg" alt="Achievement 4" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          Have an opportunity, idea, or question? Feel free to reach out — I’d love to connect.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="glass contact-card">
+          <h3>Contact Me</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me a bit about your project or question..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </article>
+
+        <article class="contact-side scroll-reveal">
+          <h3>Prefer email?</h3>
+          <p>You can also reach me directly at:</p>
+          <a href="mailto:hello@example.com" class="contact-email">maraheemkhanazher@gmail.com</a>
+
+          <div class="contact-meta">
+            <p>Available for:</p>
+            <ul>
+              <li>Full-time roles</li>
+              <li>Freelance projects</li>
+              <li>Technical collaboration</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      
+    </section>
+  </main>
+ 
+</body>
+</html>
